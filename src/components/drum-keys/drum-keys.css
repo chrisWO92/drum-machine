@@ -44,7 +44,15 @@
 /*========== BIG TABLETS ===========*/
 @media screen and (max-width: 1400px) and (orientation: portrait) {
 
+    #drum-keys {
+        order: 2;
+        padding: 3vw;
+        gap: 2.5vw;
+    }
 
+    .drum-pad {
+        font-size: 3.5vw;
+    }
 
 }
 
@@ -58,6 +66,8 @@
 /*========== SMARTPHONES ===========*/
 @media screen and (max-width: 420px) and (orientation: portrait) {
 
-
+    .drum-pad {
+        font-size: 4.6vw;
+    }
 
 }

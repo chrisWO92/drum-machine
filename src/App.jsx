@@ -6,29 +6,15 @@ import DrumKeys from './components/drum-keys/DrumKeys';
 function App() {
 
   const [power, setPower] = useState(true);
-  //const [bank, setBank] = useState(true);
   const [display, setDisplay] = useState("");
   const [volume, setVolume] = useState(0.5);
-
-  // const keyQHandler = () => {
-  //   let audio = document.getElementById("Q");
-  //   audio.load();
-  //   if (power) {
-  //     //audio.volume = volume;
-  //     audio.play();
-  //     setDisplay('Heater 1');
-  //     //display = "Heater 1";
-  //   }
-  // }
 
   return (
     <div id='drum-machine'>
       <DrumKeys
         power={power}
-        //display={display}
         volume={volume}
         setDisplay={setDisplay}
-        //keyQHandler={keyQHandler}
       />
       <DrumControls
         power={power}
